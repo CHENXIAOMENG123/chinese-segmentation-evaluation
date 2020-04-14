@@ -91,6 +91,6 @@
 - 评测自定义分词器：只要实现segment方法和向evaluators追加即可。
 
 ## 总结
-- 性能：java 远高于python，至少差了一个数量级。
+- 性能：java 远高于python，至少多了一个数量级。
 - 效果：对于jieba和thulac，在python和java上表现的不同，需要更多的时间去寻找原因，且java的thulac4j非官方提供。
 - 数据：默认数据集来源于[cws_evaluation](https://github.com/ysc/cws_evaluation)，该项目为评估中文分词的性能与效果，对于效果该项目采用的是行完美率这个指标，但是对于长句，这个指标会变的不合适，如果不同算法的错误率不一样，但是如果有一个错的词，会导致整个句子都是错的，不能很好的区分算法的precision
